@@ -3,9 +3,19 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     extend: {
-      screens: {
-        "sm": "480px"
+      spacing: {
+        "big": "48rem",
+        "biggest": "56rem"
+
       }
+    },
+    screens: {
+      sm: "480px",
+      md: "760px",
+      lg: "1024px",
+      xl: "1280px",
+      '2xl': '1536px'
+
     },
     fontFamily: {
       nunito: ['Nunito', 'sans-serif']

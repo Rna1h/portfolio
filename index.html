@@ -12,20 +12,234 @@
 </head>
 
 <body class="font-nunito">
-    <!-- into section -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
+    <!-- intro section -->
+    <div id="intro" class="h-fit lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden px-8">
+
         <!--  navbar -->
-        <nav class="w-full fixed top-0 bg-red-400">
-            <div class="container mx-auto py-5 flex justify-between">
-                <span>1</span>
-                <span>3</span>
-                <span>3</span>
+        <nav class="w-full top-0 bg-white">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-indigo-900">Portfolio</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="/">homepage</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#about-me">about me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#projects">projects</a>
+                    </li>
+                </ul>
+                <img class="hidden md:block w-5 md:cursor-pointer" src="./img/moon.png" alt="toggle">
+                <div id="hamburger" class="md:hidden space-y-1 cursor-pointer">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="mobile-menu" class="hidden bg-indigo-900 fixed left-0 top-0 w-1/2 h-screen p-10 space-y-10 text-white text-center z-10">
+                    <li>
+                        <a href="/">homepage</a>
+                    </li>
+                    <li>
+                        <a href="#about-me" onclick="hideMenu();">About me</a>
+                    </li>
+                    <li>
+                        <a href="#services" onclick="hideMenu();">Services</a>
+                    </li>
+                    <li>
+                        <a href="#projects" onclick="hideMenu();">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="hideMenu();">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <!-- intro content -->
-        <div></div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-y-5 mt-10 md:mt-0">
+            <div class="md:w-1/2">
+                <div class="text-center text-4xl xl:text-7xl font-bold">
+                    <span class="text-gray-600">Freelance</span>
+                    <p id="auto-text" class="text-red-500 h-20"></p>
+                </div>
+
+                <div class="text-center lg:mt-10">
+                    <h1 class="text-2xl">Hi, I'm Rahul</h1>
+                    <p class="text-lg text-gray-500">
+                        I specialize in automation and web development, leveraging my skills in Python, JavaScript, HTML, and CSS.
+                        With a strong attention to detail and a passion for delivering high-quality results,
+                        I create efficient automation scripts and build dynamic websites that exceed expectations.
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img class="object-cover" src="./img/dev-ed-wave.png" alt="rahul-nath">
+            </div>
+        </div>
+
     </div>
 
+    <!-- about me -->
+    <div id="about-me" class="">
+        <div class="container mx-auto py-20 px-8 lg:h-screen">
+            <div class="flex flex-col-reverse md:flex-row gap-20 items-center justify-center">
+                <div class="relative flex flex-col justify-center items-center gap-y-2">
+                    <img class="h-1/4 absolute top-0 left-10 sm:left-16 md:left-0 -z-10" src="./img/dots.png" alt="...">
+                    <div class="h-full w-3/4 md:w-full rounded-full overflow-hidden ">
+                        <img src="./img/dev-ed-wave.png" alt="rahul-nath">
+                    </div>
+                    <div class="font-bold text-xl">
+                        You can find me on:
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://github.com/Rna1h">
+                            <img class="w-6 cursor-pointer" src="./img/github.svg" alt="" />
+                        </a>
+                        <a href="mailto:rahulnathv000@gmail.com">
+                            <img class="w-6 cursor-pointer" src="./img/email.svg" alt="" />
+                        </a>
+                        <a href="https://www.upwork.com/freelancers/~0103f67beba8bb96e0">
+                            <img class="w-6 cursor-pointer" src="./img/upwork.svg" alt="" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/rahul-nath-51a9781a1/">
+                            <img class="w-6 cursor-pointer" src="./img/linkedin.svg" alt="" />
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="my-auto flex flex-col gap-3 ">
+                    <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+                    <h1 class="text-3xl font-medium">Freelancer</h1>
+                    <h1 class="text-3xl font-medium">Web Developer</h1>
+                    <p class="to-gray-400">I graduated in computer science and engineering from Assam Engineering College, in 2022.
+                        I have worked with many national and international clients on automation and web development projects.
+                    </p>
+                    <h2 class="text-gray-400">HTML / CSS</h2>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                        <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+                    </div>
+                    <h2 class="text-gray-400">JavaScript</h2>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                        <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+                    </div>
+                    <h2 class="text-gray-400">React</h2>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                        <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+                    </div>
+                    <h2 class="text-gray-400">Python</h2>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                        <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- services -->
+    <div id="services" class="">
+        <div class="container mx-auto py-20 px-8 lg:h-fit">
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">SERVICES</h1>
+                <h1>What do I offer?</h1>
+                <p class="w-1/2 text-center text-gray-400">My approach to website design is to creare a website that strengthens
+                    your company's brand while ensuring ease of use and simplicity for your audience.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap">
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                    <img class="w-10" src="./img/icon.png" alt="icon">
+                    <h1 class="font-medium text-lg">UX /UI Design</h1>
+                    <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                    <img class="w-10" src="./img/icon.png" alt="icon">
+                    <h1 class="font-medium text-lg">UX /UI Design</h1>
+                    <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                    <img class="w-10" src="./img/icon.png" alt="icon">
+                    <h1 class="font-medium text-lg">UX /UI Design</h1>
+                    <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                    <img class="w-10" src="./img/icon.png" alt="icon">
+                    <h1 class="font-medium text-lg">UX /UI Design</h1>
+                    <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                    <img class="w-10" src="./img/icon.png" alt="icon">
+                    <h1 class="font-medium text-lg">UX /UI Design</h1>
+                    <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                    <img class="w-10" src="./img/icon.png" alt="icon">
+                    <h1 class="font-medium text-lg">UX /UI Design</h1>
+                    <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects" class="">
+        <div class="container mx-auto py-20 px-8 h-fit">
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">PROJECTS</h1>
+                <h1>Works & Development</h1>
+                <p class="w-1/2 text-center text-gray-400">My approach to website design is to creare a website that strengthens
+                    your company's brand while ensuring ease of use and simplicity for your audience.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap">
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                    <img class="w-full" src="./img/item.png" alt="icon">
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                    <img class="w-full" src="./img/item.png" alt="icon">
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                    <img class="w-full" src="./img/item.png" alt="icon">
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                    <img class="w-full" src="./img/item.png" alt="icon">
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                    <img class="w-full" src="./img/item.png" alt="icon">
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                    <img class="w-full" src="./img/item.png" alt="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+        <div class="container mx-auto py-5 flex items-center justify-evenly px-8">
+            <span class="hidden md:block font-medium text-white">© 2023 Portfolio. Design with ❤️ by Rahul Nath.</span>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
