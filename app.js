@@ -1,8 +1,14 @@
 const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector("#mobile-menu");
+const themeToggle = document.querySelector('#themeToggle');
+const theme = document.querySelector('body');
 
 hamburger.addEventListener('click', () => {
     hideMenu();
+});
+
+themeToggle.addEventListener('click', () => {
+    theme.classList.toggle("dark");
 })
 
 function hideMenu() {

@@ -13,15 +13,15 @@
 
 <body class="font-nunito">
     <!-- intro section -->
-    <div id="intro" class="h-fit lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden px-8">
+    <div id="intro" class="h-fit lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden dark:bg-slate-900">
 
         <!--  navbar -->
-        <nav class="w-full top-0 bg-white">
+        <nav class="w-full h-fit top-0 bg-white px-8 dark:bg-transparent">
             <div class="container mx-auto py-5 flex items-center justify-between">
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-indigo-900">Portfolio</span>
+                    <span class="text-2xl font-bold text-indigo-900 dark:text-red-500">Portfolio</span>
                 </div>
-                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-200 font-bold text-sm uppercase">
                     <li class="hover:text-gray-500">
                         <a href="/">Home</a>
                     </li>
@@ -35,7 +35,7 @@
                         <a href="#projects">projects</a>
                     </li>
                 </ul>
-                <img class="hidden md:block w-5 md:cursor-pointer" src="./img/moon.png" alt="toggle">
+                <img id="themeToggle" class="hidden md:block w-5 md:cursor-pointer" src="./img/moon.png" alt="toggle">
                 <div id="hamburger" class="md:hidden space-y-1 cursor-pointer">
                     <div class="w-6 h-0.5 bg-black"></div>
                     <div class="w-6 h-0.5 bg-black"></div>
@@ -57,17 +57,18 @@
                 </ul>
             </div>
         </nav>
+
         <!-- intro content -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-y-5 mt-10 md:mt-0">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-y-5 mt-10 md:mt-0 px-8">
             <div class="md:w-1/2">
                 <div class="text-center text-4xl xl:text-7xl font-bold">
-                    <span class="text-gray-600">Freelance</span>
+                    <span class="text-gray-600 dark:text-gray-100">Freelance</span>
                     <p id="auto-text" class="text-red-500 h-20"></p>
                 </div>
 
                 <div class="text-center lg:mt-10">
-                    <h1 class="text-2xl">Hi, I'm Rahul Nath</h1>
-                    <p class="text-lg text-gray-500">
+                    <h1 class="text-2xl dark:text-gray-100">Hi, I'm Rahul Nath</h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-200">
                         I specialize in automation and web development, leveraging my skills in Python, JavaScript, HTML, and CSS.
                         With a strong attention to detail and a passion for delivering high-quality results,
                         I create efficient automation scripts and build dynamic websites that exceed expectations.
@@ -82,7 +83,7 @@
     </div>
 
     <!-- about me -->
-    <div id="about-me" class="">
+    <div id="about-me" class="dark:bg-slate-900">
         <div class="container mx-auto py-20 px-8 lg:h-screen">
             <div class="flex flex-col-reverse md:flex-row gap-20 items-center justify-center">
                 <div class="relative flex flex-col justify-center items-center gap-y-2">
@@ -90,7 +91,7 @@
                     <div class="h-full w-3/4 md:w-full rounded-full overflow-hidden ">
                         <img src="./img/dev-ed-wave.png" alt="rahul-nath">
                     </div>
-                    <div class="font-bold text-xl">
+                    <div class="font-bold text-xl dark:text-gray-400">
                         You can find me on:
                     </div>
                     <div class="flex gap-2">
@@ -110,11 +111,11 @@
 
                     </div>
                 </div>
-                <div class="my-auto flex flex-col gap-3 ">
+                <div class="my-auto flex flex-col gap-3">
                     <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
-                    <h1 class="text-3xl font-medium">Freelancer</h1>
-                    <h1 class="text-3xl font-medium">Web Developer</h1>
-                    <p class="to-gray-400">I graduated in computer science and engineering from Assam Engineering College, in 2022.
+                    <h1 class="text-3xl font-medium dark:text-gray-200">Freelancer</h1>
+                    <h1 class="text-3xl font-medium dark:text-gray-200">Web Developer</h1>
+                    <p class="text-gray-400">I graduated in computer science and engineering from Assam Engineering College, in 2022.
                         I have worked with many national and international clients on automation and web development projects.
                     </p>
                     <h2 class="text-gray-400">HTML / CSS</h2>
@@ -141,48 +142,48 @@
     </div>
 
     <!-- services -->
-    <div id="services" class="">
+    <div id="services" class="dark:bg-slate-900">
         <div class="container mx-auto py-20 px-8 lg:h-fit">
             <div class="flex flex-col gap-3 items-center">
                 <h1 class="text-indigo-600 font-bold">SERVICES</h1>
-                <h1>What do I offer?</h1>
+                <h1 class="dark:text-gray-100">What do I offer?</h1>
                 <p class="w-3/4 md:w-1/2 text-center text-gray-400">I work on both backend and frontend technologies, also i've experience in scripting and automation.
                 </p>
             </div>
 
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap justify-evenly">
                 <!-- card -->
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3 flex flex-col gap-3">
                     <img class="w-10" src="./img/icon.png" alt="icon">
                     <h1 class="font-medium text-lg">UX /UI Design</h1>
                     <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
                     <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3 flex flex-col gap-3">
                     <img class="w-10" src="./img/icon.png" alt="icon">
                     <h1 class="font-medium text-lg">UX /UI Design</h1>
                     <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
                     <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3 flex flex-col gap-3">
                     <img class="w-10" src="./img/icon.png" alt="icon">
                     <h1 class="font-medium text-lg">UX /UI Design</h1>
                     <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
                     <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3 flex flex-col gap-3">
                     <img class="w-10" src="./img/icon.png" alt="icon">
                     <h1 class="font-medium text-lg">UX /UI Design</h1>
                     <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
                     <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3 flex flex-col gap-3">
                     <img class="w-10" src="./img/icon.png" alt="icon">
                     <h1 class="font-medium text-lg">UX /UI Design</h1>
                     <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
                     <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 flex flex-col gap-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3 flex flex-col gap-3">
                     <img class="w-10" src="./img/icon.png" alt="icon">
                     <h1 class="font-medium text-lg">UX /UI Design</h1>
                     <p1 class="text-gray-400">approach to website design is to creare a y approach to website design is to .</p1>
@@ -194,33 +195,27 @@
     </div>
 
     <!-- projects -->
-    <div id="projects" class="">
+    <div id="projects" class="dark:bg-slate-900">
         <div class="container mx-auto py-20 px-8 h-fit">
             <div class="flex flex-col gap-3 items-center">
                 <h1 class="text-indigo-600 font-bold">PROJECTS</h1>
-                <h1>Works & Development</h1>
+                <h1 class="dark:text-gray-100">Works & Development</h1>
                 <p class="w-3/4 md:w-1/2 text-center text-gray-400">Here are some of my personal projects and the projects which I've done as a freelancer.
                 </p>
             </div>
 
             <div class="flex flex-wrap">
                 <!-- card -->
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3">
                     <img class="w-full" src="./img/item.png" alt="icon">
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3">
                     <img class="w-full" src="./img/item.png" alt="icon">
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3">
                     <img class="w-full" src="./img/item.png" alt="icon">
                 </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
-                    <img class="w-full" src="./img/item.png" alt="icon">
-                </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
-                    <img class="w-full" src="./img/item.png" alt="icon">
-                </div>
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3">
+                <div class="w-full md:w-4/12 shadow-xl dark:shadow-white dark:shadow-sm rounded-lg p-5 my-3">
                     <img class="w-full" src="./img/item.png" alt="icon">
                 </div>
             </div>
