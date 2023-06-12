@@ -35,13 +35,17 @@
                         <a href="#projects">projects</a>
                     </li>
                 </ul>
-                <img id="themeToggle" class="hidden md:block w-5 md:cursor-pointer" src="./img/moon.png" alt="toggle">
-                <div id="hamburger" class="md:hidden space-y-1 cursor-pointer">
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
+                <div class="flex gap-x-4 justify-between items-center">
+                    <img id="moon" class="w-5 md:cursor-pointer" src="./img/moon.png" alt="moon">
+                    <img id="sun" class="hidden w-5 md:cursor-pointer" src="./img/sun.png" alt="sun">
+                    <div id="hamburger" class="md:hidden space-y-1 cursor-pointer">
+                        <div class="w-6 h-0.5 bg-black"></div>
+                        <div class="w-6 h-0.5 bg-black"></div>
+                        <div class="w-6 h-0.5 bg-black"></div>
+                    </div>
                 </div>
-                <ul id="mobile-menu" class="hidden bg-black fixed left-0 top-0 w-1/2 h-screen p-10 space-y-10 text-white text-center z-10">
+
+                <ul id="mobile-menu" class="closed bg-gray-800 fixed left-0 top-0 w-1/2 h-screen p-10 space-y-10 text-white text-center z-10 ease-out delay-150 duration-300">
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -73,6 +77,7 @@
                         With a strong attention to detail and a passion for delivering high-quality results,
                         I create efficient automation scripts and build dynamic websites that exceed expectations.
                     </p>
+                    <a href="./doc/rahul-nath-resume.docx" class="underline">Download CV</a>
                 </div>
             </div>
             <div class="md:w-1/2">
@@ -95,16 +100,13 @@
                     </div>
                     <div class="flex gap-2">
                         <a href="https://github.com/Rna1h">
-                            <img class="w-6 cursor-pointer" src="./img/github.svg" alt="" />
+                            <img class="w-6 cursor-pointer" src="./img/github.png" alt="github" />
                         </a>
                         <a href="mailto:rahulnathv000@gmail.com">
-                            <img class="w-6 cursor-pointer" src="./img/email.svg" alt="" />
+                            <img class="w-6 cursor-pointer" src="./img/email.svg" alt="email" />
                         </a>
-                        <!-- <a href="https://www.upwork.com/freelancers/~0103f67beba8bb96e0">
-                            <img class="w-6 cursor-pointer" src="./img/upwork.svg" alt="" />
-                        </a> -->
                         <a href="https://www.linkedin.com/in/rahul-nath-51a9781a1/">
-                            <img class="w-6 cursor-pointer" src="./img/linkedin.svg" alt="" />
+                            <img class="w-6 cursor-pointer" src="./img/linkedin.svg" alt="linkedin" />
                         </a>
 
 
@@ -140,7 +142,7 @@
 
     </div>
 
-    <!-- services -->
+    <!-- technologies -->
     <div id="tech" class="dark:bg-slate-900">
         <div class="container mx-auto py-20 px-8 lg:h-fit">
             <div class="flex flex-col gap-3 items-center">

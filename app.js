@@ -1,18 +1,29 @@
 const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector("#mobile-menu");
-const themeToggle = document.querySelector('#themeToggle');
+const moon = document.querySelector('#moon');
+const sun = document.querySelector('#sun');
 const theme = document.querySelector('body');
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', (e) => {
     hideMenu();
 });
 
-themeToggle.addEventListener('click', () => {
+moon.addEventListener('click', () => {
     theme.classList.toggle("dark");
+    moon.classList.toggle("hidden");
+    sun.classList.toggle("hidden");
 })
 
+sun.addEventListener('click', () => {
+    theme.classList.toggle("dark");
+    sun.classList.toggle("hidden");
+    moon.classList.toggle("hidden");
+})
+
+
 function hideMenu() {
-    menu.classList.toggle("hidden");
+    menu.classList.toggle("open");
+    menu.classList.toggle("closed");
 }
 
 
